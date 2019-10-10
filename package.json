@@ -1,0 +1,15 @@
+{
+  "name": "olthoff_scott_promo_app",
+  "version": "1.0.0",
+  "description": "Promo App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
