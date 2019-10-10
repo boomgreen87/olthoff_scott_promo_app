@@ -1,0 +1,19 @@
+// Aligns footer content and styles footer
+#mainFooter {
+    margin-top: 5px;
+    text-align: center;
+    padding-bottom: $main-spacing;
+    padding-top: $main-spacing;
+    background-color: $accent-color;
+    border-top: 2px solid $base-color;
+}
+
+// Styles back to top
+#backToTop {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#footerNav {
+    display: none;
+}
