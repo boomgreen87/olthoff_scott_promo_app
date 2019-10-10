@@ -15,72 +15,83 @@
 
         <div class="container">
             <!--Header-->
-            <header class="mainHeader">
+            <header id="mainHeader">
                 <!--Logo-->
                 <div id="logoCon">
                     <img src="images/logo.svg" alt="Horse Heads Inc. Logo" id="logo">
                 </div> <!--End logoCon-->
 
+                <!-- Header Text -->
+                <h3 id="headerText">Horse Heads Inc.</h3>
+
+                <!-- Menu button -->
+					<div id="menuButton">
+                        <div id="lines">
+                            <div id="line1"></div>
+                            <div id="line2"></div>
+                            <div id="line3"></div>
+                        </div> <!-- End lines -->
+                </div> <!-- End menuButton -->
+
                 <!--Main navigation-->
-                <nav class="mainNav">
+                <nav id="mainNav">
                     <h2 class="hidden">Main Navigation</h2>
 
-                    <div class="burgerCon">
-                        <ul class="burgerMenu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul> <!--End burgerMenu-->
-                    </div> <!--End burgerCon-->
+                    <ul id="burgerMenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul> <!--End burgerMenu-->
                 </nav> <!--End mainNav-->
             </header> <!--End mainHeader-->
 
             <!--Hero-->
-            <div class="hero">
+            <div id="hero">
                 <h2 class="hidden">Hero Area</h2>
 
                 <!--Hero text-->
                 <h3>Hyper Realistic!</h3>
-                <p>People may actually believe you're a horse!</p>
+                <p>People may actually believe that you're a horse!</p>
 
                 <!--Hero Image-->
                 <img src="images/horse_mask_hero.jpg" alt="Horse Mask Hero" id="heroImage">
             </div> <!--End hero-->
 
             <!--Info and images-->
-            <div class="content">
+            <div id="content">
                 <h2 class="hidden">Page Content</h2>
 
-                <div class="contentImage">
-                    <img src="images/horse_mask_man.jpg" alt="Man In Horse Mask">
+                <div id="contentText">
+                    <h3>Can't Be Beat!</h3>
+    
+                    <p>These masks are literally the coolest thing that you can own! When you have guests, wear your horse mask to make sure that they feel welcome and comfortable. There is no wrong place to wear your horse mask! Wear it to school, to work, even to your wedding!</p>
+                        
+                    <p>Our masks are made with only the highest quality materials: real horse hair, teeth, eyes, and skin. This ensures the highest level of realism possible!</p>
+    
+                    <button id="buyButton">BUY NOW!</button>
+                </div> <!--End contentText-->
+
+                <div id="contentImage">
+                    <img src="images/horse_mask_man.jpg" alt="Man In Horse Mask" id="maskMan">
                 </div> <!--End contentImage-->
 
-                <div class="contentText">
-                    <h3>Can't Be Beat!</h3>
-
-                    <p>These masks are literally the coolest thing that you can own! When you have guests, make sure that you are wearing your horse mask to make sure they feel welcome and comfortable. There is no wrong place to wear your horse mask! Wear it to school, to work, even to your wedding!</p>
-                    
-                    <p>Our masks are made with only the highest quality materials: real horse hair, teeth, eyes, and skin. This ensures the highest level of realism possible!</p>
-
-                    <button>BUY NOW!</button>
-                </div> <!--End contentText-->
             </div> <!--End content-->
 
             <!--Footer-->
-            <footer class="mainFooter">
+            <footer id="mainFooter">
                 <h2 class="hidden">Main Footer</h2>
 
-                <!--Back to top button-->
-                <a href="#">Back To Top</a>
-
                 <!-- Footer Navigation-->
-                <ul class="footerNav">
+                <ul id="footerNav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul> <!--End footerNav-->
+
+                <!--Back to top button-->
+                <a href="#" id="backToTop">Back To Top</a>
             </footer> <!--End mainFooter-->
         </div> <!--End container-->
     </main> <!--End main-->

@@ -1,0 +1,39 @@
+@import '_vars';
+@import '_reset';
+@import 'modules/_header';
+@import 'modules/_hero';
+@import 'modules/_content';
+@import 'modules/_footer';
+
+// Hides content
+.hidden
+{
+	display: none;
+}
+
+// Changes body text font and colour
+body {
+    font-family: $body-font;
+    color: $base-color;
+    background-color: $site-bg-color;
+}
+
+// Sizes and aligns page
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: $page-bg-color;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+// Displays navs inline with no bullet
+ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+// Removes underline and changes colour of links
+a {
+    text-decoration: none;
+    color: $base-color;
+}

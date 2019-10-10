@@ -1,0 +1,27 @@
+// Centers hero content and spaces it out
+#hero {
+    margin-top: $main-spacing;
+    margin-bottom: $main-spacing;
+    width: 100%;
+    text-align: center;
+}
+
+// Styles hero header
+#hero h3 {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+// Styles hero paragraph
+#hero p {
+    font-size: 26px;
+    margin-top: $main-spacing;
+    font-style: italic;
+}
+
+// Sizes image
+#heroImage {
+    margin-top: $main-spacing;
+    max-width: 250px;
+}

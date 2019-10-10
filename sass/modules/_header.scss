@@ -1,0 +1,97 @@
+// Positions header content and styles header
+#mainHeader {
+    display: flex;
+    flex-direction: row;
+    background-color: $accent-color;
+    border-bottom: 2px solid $base-color;
+}
+
+// Sizes and positions logo
+#logo {
+    padding: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+// Positions and styles header text
+#headerText {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+/*Positions and styles nav*/
+#mainNav
+{
+	position: fixed;
+	top: -370px;
+	display: block;
+	width: 100%;
+	transition: 0.5s ease;
+	z-index: 2;
+}
+
+/*Colours nav links*/
+#mainNav ul li a
+{
+	display: block;
+	height:40px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 20px;
+	border-bottom: 1px solid $base-color;
+}
+
+/*Shows nav when button is clicked*/
+#mainNav.openMenu
+{
+	top: 60px;
+}
+
+/*Positions the menu button*/
+#menuButton
+{
+	margin-left: auto;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+/*Adds space to top of menu button's lines*/
+#lines
+{
+	margin-top: 10px;
+}
+
+/*Styles the menu button's lines*/
+#line1, #line2, #line3
+{
+	width: 24px;
+	height: 0px;
+	border-top: 3px solid $base-color;
+	margin: 5px;
+	transition: all 0.25s linear;
+}
+
+/*Animates line1 when menu is opened*/
+#line1.openMenu
+{
+	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+	-ms-transform: rotate(-45deg) translate(-5px, 6px);
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+/*Hides line2 when menu is opened*/
+#line2.openMenu
+{
+	opacity: 0;
+}
+
+/*Animates line3 when menu is opened*/
+#line3.openMenu
+{
+	-webkit-transform: rotate(45deg) translate(-5px, -6px);
+	-ms-transform: rotate(45deg) translate(-5px, -6px);
+	transform: rotate(45deg) translate(-5px, -6px);
+}
