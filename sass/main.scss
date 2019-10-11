@@ -21,6 +21,7 @@ body {
 // Sizes and aligns page
 main {
     margin: 0 auto;
+    padding-top: 75px;
     max-width: 1200px;
     background-color: $page-bg-color;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
@@ -36,4 +37,25 @@ ul li {
 a {
     text-decoration: none;
     color: $base-color;
+}
+
+
+
+
+// Changes to desktop CSS
+@media screen and (min-width: 1000px) {
+    // Removes padding from top
+    main {
+        padding-top: 0px;
+    }
+
+    // Add transitions to links
+    a {
+        transition: ease 0.25s;
+    }
+
+    // Links turn white on hover
+    a:hover {
+        color: white;
+    }
 }
