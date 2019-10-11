@@ -1,5 +1,7 @@
 // Aligns footer content and styles footer
 #mainFooter {
+    display: flex;
+    flex-direction: column;
     margin-top: 5px;
     text-align: center;
     padding-bottom: $main-spacing;
@@ -15,5 +17,30 @@
 }
 
 #footerNav {
+    font-weight: bold;
+    font-size: 20px;
     display: none;
+    margin-bottom: 15px;
+}
+
+
+
+
+// Changes to desktop CSS
+@media screen and (min-width: 1000px) {
+    // Shows footer nav
+    #footerNav {
+        display: inline;
+    }
+
+    // Spaces footer nav links
+    #mainFooter ul li a{
+        padding-right: 30px;
+    }
+
+    // Styles back to top
+    #backToTop {
+        font-weight: normal;
+        font-size: 18px;
+    }  
 }

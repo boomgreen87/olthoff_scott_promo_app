@@ -1,9 +1,14 @@
 // Positions header content and styles header
-#mainHeader {
+#headerCon {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 75px;
     background-color: $accent-color;
     border-bottom: 2px solid $base-color;
+    z-index: 3;
+    top: 0px;
 }
 
 // Sizes and positions logo
@@ -21,77 +26,133 @@
     margin-top: 28px;
 }
 
-/*Positions and styles nav*/
-#mainNav
-{
-	position: fixed;
+// Positions and styles nav
+#mainNav {
+	position: absolute;
 	top: -370px;
 	display: block;
 	width: 100%;
 	transition: 0.5s ease;
-	z-index: 2;
 }
 
-/*Colours nav links*/
-#mainNav ul li a
-{
+// Colours, sizes, and styles nav links
+#mainNav ul li a {
 	display: block;
-	height:40px;
+	height:60px;
 	width: 100%;
 	text-align: center;
-	font-size: 14px;
-	padding-top: 20px;
-	border-bottom: 1px solid $base-color;
+    font-size: 24px;
+    font-weight: bold;
+	padding-top: 30px;
+    border-bottom: 2px solid $base-color;
+    background-color: white;
 }
 
-/*Shows nav when button is clicked*/
-#mainNav.openMenu
-{
-	top: 60px;
+// Shows nav when button is clicked
+#mainNav.openMenu {
+	top: 75px;
 }
 
-/*Positions the menu button*/
-#menuButton
-{
+// Positions the menu button
+#menuButton {
 	margin-left: auto;
 	margin-right: 10px;
 	margin-top: 20px;
 }
 
-/*Adds space to top of menu button's lines*/
-#lines
-{
+// Adds space to top of menu button's lines
+#lines {
 	margin-top: 10px;
 }
 
-/*Styles the menu button's lines*/
-#line1, #line2, #line3
-{
+// Styles the menu button's lines
+#line1, #line2, #line3 {
 	width: 24px;
 	height: 0px;
 	border-top: 3px solid $base-color;
 	margin: 5px;
-	transition: all 0.25s linear;
+	transition: all 0.25s ease;
 }
 
-/*Animates line1 when menu is opened*/
-#line1.openMenu
-{
+// Animates line1 when menu is opened
+#line1.openMenu {
 	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
 	-ms-transform: rotate(-45deg) translate(-5px, 6px);
 	transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-/*Hides line2 when menu is opened*/
-#line2.openMenu
-{
+// Hides line2 when menu is opened
+#line2.openMenu {
 	opacity: 0;
 }
 
-/*Animates line3 when menu is opened*/
-#line3.openMenu
-{
+// Animates line3 when menu is opened
+#line3.openMenu {
 	-webkit-transform: rotate(45deg) translate(-5px, -6px);
 	-ms-transform: rotate(45deg) translate(-5px, -6px);
 	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+// Changes to desktop CSS
+@media screen and (min-width: 1000px) {
+    // Styles header
+    #mainHeader {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 75px;
+        background-color: $accent-color;
+        border-bottom: 2px solid $base-color;
+    }
+
+    // Adjust headerCon for desktop
+    #headerCon {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    // Hides burger menu
+    #menuButton {
+        display: none;
+    }
+
+    // Makes mainNav static
+    #mainNav {
+        position: static;
+        margin-top: 15px;
+    }
+
+    // Displays nav links in a row
+	#mainNav ul {
+		display: flex;
+		flex-direction: row;
+		margin-left: auto;
+		width: 385px;
+		margin-right: 10px;
+	}
+
+	// Spaces the nav links
+	#mainNav ul li {
+		margin-top: 9px;
+        padding-right: 25px;
+    }
+    
+    // Removes borders, backgrounds and space from nav items
+    #mainNav ul li a {
+        border: none;
+        padding: 0px;
+        height: 20px;
+        background: none;
+        font-size: 20px;
+    }
+
+    // Removes space from last link
+	#mainNav ul li:last-child {
+		padding-right: 0;
+	}
 }

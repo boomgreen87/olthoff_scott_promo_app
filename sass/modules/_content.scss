@@ -28,9 +28,55 @@
     padding: 10px;
     font-size: 24px;
     font-weight: bold;
+    transition: 0.25s ease;
+}
+
+// Changes colour of buy button on hover
+#buyButton:hover {
+    background-color: #ffc400;
+    cursor: pointer;
 }
 
 // Sizes content image
 #maskMan {
     max-width: 100%;
+}
+
+
+
+
+// Changes to desktop CSS
+@media screen and (min-width: 1000px) {
+    #content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+
+    #maskMan {
+        min-width: 350px;
+        max-width: 350px;
+    }
+
+    #contentText {
+        text-align: left;
+        order: 1;
+        max-width: 1100px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #maskMan {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    #contentText {
+        margin-top: 20px;
+    }
 }
