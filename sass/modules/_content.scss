@@ -56,11 +56,13 @@
         margin-top: 50px;
     }
 
+    // Resizes content picture
     #maskMan {
         min-width: 350px;
         max-width: 350px;
     }
 
+    // Formats content text
     #contentText {
         text-align: left;
         order: 1;
@@ -70,12 +72,15 @@
     }
 }
 
+// Media query for content at 1200px
 @media screen and (min-width: 1200px) {
+    // Resizes content picture
     #maskMan {
         min-width: 300px;
         max-width: 300px;
     }
 
+    // Formats content text
     #contentText {
         margin-top: 20px;
     }
